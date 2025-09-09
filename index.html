@@ -1,16 +1,3 @@
-<!--
-Modern Responsive Portfolio
-Single-file HTML + CSS + minimal JS
-Features:
-- Responsive (mobile, tablet, desktop)
-- Animated hero with background image
-- Image gallery with hover animations
-- Sticky nav with mobile menu
-- Contact section and footer
-- CSS variables and media queries
-- Use your own images by replacing the image URLs
--->
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -19,9 +6,7 @@ Features:
   <title>Sameer Ahir — Portfolio</title>
   <meta name="description" content="Modern responsive portfolio with animations, background images and gallery." />
   <style>
-    /* ------------------
-       Variables & base
-       ------------------ */
+    /*Variables & base */
     :root{
       --bg:#0f1724; /* deep slate */
       --card:#0b1220;
@@ -52,9 +37,7 @@ Features:
       padding:0 16px;
     }
 
-    /* ------------------
-       Navbar
-       ------------------ */
+    /*Navbar*/
     header{
       position:sticky;top:0;z-index:60;
       backdrop-filter: blur(6px);
@@ -73,9 +56,7 @@ Features:
     /* mobile menu */
     .menu-toggle{display:none;border:0;background:none;color:var(--muted);font-size:20px}
 
-    /* ------------------
-       Hero
-       ------------------ */
+    /*Hero*/
     .hero{
       min-height:78vh;
       display:grid;align-items:center;padding:48px 0;
@@ -101,9 +82,7 @@ Features:
     .roles{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
     .chip{font-size:13px;padding:6px 10px;background:var(--glass);border-radius:999px;color:var(--muted)}
 
-    /* ------------------
-       Sections
-       ------------------ */
+    /*Section*/
     section{padding:36px 0}
     .section-title{display:flex;align-items:center;gap:12px;margin-bottom:18px}
     .section-title h2{margin:0}
@@ -132,9 +111,7 @@ Features:
     /* Footer */
     footer{padding:36px 0;color:var(--muted);border-top:1px solid rgba(255,255,255,0.02)}
 
-    /* ------------------
-       Responsive
-       ------------------ */
+    /* Responsive*/
     @media (max-width:1024px){
       .hero__inner{grid-template-columns:1fr 1fr}
       .projects{grid-template-columns:repeat(2,1fr)}
@@ -343,6 +320,7 @@ Features:
   </script>
 </body>
 </html>
+
 
 
 
